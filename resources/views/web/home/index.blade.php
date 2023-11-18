@@ -278,7 +278,7 @@
                     <p class="hidden lg:block w-auto lg:w-[475px] mb-[30px] font-Montserrat">
                         We aim to prove that our role in advancing the economy through oil waste management brings long-term sustainability to the environment for a better quality of life.
                     </p>
-                    <a href="" class="hidden lg:block w-[190px] bg-transparent px-[30px] py-[5px] border-2 border-[#444444] rounded-full font-Montserrat">Find out more ></a>
+                    <a href="" class="hidden lg:block w-[200px] bg-transparent px-[30px] py-[5px] border-2 border-[#444444] rounded-full font-Montserrat">Find out more ></a>
 
                 </div>
 
