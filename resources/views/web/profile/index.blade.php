@@ -353,7 +353,7 @@
 
 <section class="lg:pt-[100px] description-section hidden">
     <div class="profile-detail-slider h-[1005px] lg:h-[600px]">
-        <div class="relative w-[100vw]" data-to=0  style="width: 100% !important;">
+        <div class="relative w-[100vw]" data-to=0 style="width: 100% !important;">
             <img src="{{ asset('images/profile/profile-det-1.png') }}" alt="" class="h-[1005px]  lg:h-[600px] w-[100vw] object-cover ">
 
             <div class="absolute top-20 w-full px-10 ">
@@ -406,7 +406,7 @@
                             <a class="swipe-to block absolute top-[130px] right-[100px] translate-x-[118px] translate-y-[-7px]" data-to="1">
                                 <img src="{{ asset('images/profile/next.png') }}" alt="">
                             </a>
-                            
+
                         </div>
 
                     </div>
@@ -463,13 +463,13 @@
                             <a class="swipe-to block absolute top-[130px] right-[100px] translate-x-[118px] translate-y-[-7px]" data-to="2">
                                 <img src="{{ asset('images/profile/next.png') }}" alt="">
                             </a>
-                            
+
                         </div>
 
                     </div>
 
 
-                   
+
                 </div>
             </div>
         </div>
@@ -500,7 +500,7 @@
 
                         </div>
                     </div>
-                    
+
 
                     <div class="basis-full lg:basis-2/6">
                         <div class=" relative mt-[10px] lg:mt-[100px] w-[300px]">
@@ -509,7 +509,7 @@
                             <a class="swipe-to block absolute top-[130px] right-[100px] translate-x-[118px] translate-y-[-7px]" data-to="3">
                                 <img src="{{ asset('images/profile/next.png') }}" alt="">
                             </a>
-                            
+
                         </div>
 
                     </div>
@@ -553,11 +553,11 @@
                             <a class="swipe-to block absolute top-[130px] right-[100px] translate-x-[118px] translate-y-[-7px]" data-to="0">
                                 <img src="{{ asset('images/profile/next.png') }}" alt="">
                             </a>
-                            
+
                         </div>
 
                     </div>
-                   
+
                 </div>
             </div>
         </div>
@@ -608,7 +608,7 @@
             }
         );
 
-        $('.image-hove').on('click tap', function() {
+        $(document).on('click touchstart tap', '.image-hove', function() {
             let profileImage = $(this).data('profile')
 
             $('.image-section').addClass('hidden')
@@ -616,9 +616,19 @@
             $('.description-section').removeClass('hidden')
 
             $('.profile-detail-slider').slick('slickGoTo', profileImage - 1);
-
-
         })
+
+        // $('.image-hove').on('click  touchstart tap', function() {
+        //     let profileImage = $(this).data('profile')
+
+        //     $('.image-section').addClass('hidden')
+
+        //     $('.description-section').removeClass('hidden')
+
+        //     $('.profile-detail-slider').slick('slickGoTo', profileImage - 1);
+
+
+        // })
 
 
         $('.profile-slider').slick({

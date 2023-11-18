@@ -507,7 +507,7 @@
             <!-- Tab Contents -->
             <div id="tab-contents">
                 <div id="first" class="p-2 lg:p-4 flex  mt-[30px] lg:mt-0 tab-contain-box">
-                    <div class=" bg-white w-[273px] h-[314px] rounded-bl-[65px] rounded-tr-[65px] shadow-xl ml-[20px] relative mt-[30px] mb-[30px] lg:mb-0">
+                    <div class=" bg-white w-[273px] h-[350px] lg:h-[314px] rounded-bl-[65px] rounded-tr-[65px] shadow-xl ml-[20px] relative mt-[30px] mb-[30px] lg:mb-0">
                         <div class="flex justify-center  mb-[10px]">
                             <img src="{{ asset('images/homepage/image-1.png') }}" alt="" class=" w-full h-[150px]">
                         </div>
@@ -528,7 +528,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class=" bg-white w-[273px] h-[314px] rounded-bl-[65px] rounded-tr-[65px] shadow-xl ml-[20px] relative mt-[30px] mb-[30px] lg:mb-0">
+                    <div class=" bg-white w-[273px] h-[350px] lg:h-[314px] rounded-bl-[65px] rounded-tr-[65px] shadow-xl ml-[20px] relative mt-[30px] mb-[30px] lg:mb-0">
                         <div class="flex justify-center  mb-[10px]">
                             <img src="{{ asset('images/homepage/image-2.png') }}" alt="" class=" w-full h-[150px]">
                         </div>
@@ -549,7 +549,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class=" bg-white w-[273px] h-[314px] rounded-bl-[65px] rounded-tr-[65px] shadow-xl ml-[20px] relative mt-[30px] mb-[30px] lg:mb-0">
+                    <div class=" bg-white w-[273px] h-[350px] lg:h-[314px] rounded-bl-[65px] rounded-tr-[65px] shadow-xl ml-[20px] relative mt-[30px] mb-[30px] lg:mb-0">
                         <div class="flex justify-center  mb-[10px]">
                             <img src="{{ asset('images/homepage/image-3.png') }}" alt="" class=" w-full h-[150px]">
                         </div>
@@ -570,7 +570,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class=" bg-white w-[273px] h-[314px] rounded-bl-[65px] rounded-tr-[65px] shadow-xl ml-[20px] relative mt-[30px] mb-[30px] lg:mb-0">
+                    <div class=" bg-white w-[273px] h-[350px] lg:h-[314px] rounded-bl-[65px] rounded-tr-[65px] shadow-xl ml-[20px] relative mt-[30px] mb-[30px] lg:mb-0">
                         <div class="flex justify-center  mb-[10px]">
                             <img src="{{ asset('images/homepage/image-4.png') }}" alt="" class=" w-full h-[150px]">
                         </div>
