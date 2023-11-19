@@ -618,17 +618,7 @@
             $('.profile-detail-slider').slick('slickGoTo', profileImage - 1);
         })
 
-        // $('.image-hove').on('click  touchstart tap', function() {
-        //     let profileImage = $(this).data('profile')
-
-        //     $('.image-section').addClass('hidden')
-
-        //     $('.description-section').removeClass('hidden')
-
-        //     $('.profile-detail-slider').slick('slickGoTo', profileImage - 1);
-
-
-        // })
+        
 
 
         $('.profile-slider').slick({

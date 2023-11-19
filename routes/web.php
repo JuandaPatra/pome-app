@@ -14,9 +14,6 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-// Route::get('/', function () {
-//     return view('welcome');
-// });
 
 Route::get('/', [HomeController::class, 'index']);
 
@@ -25,3 +22,5 @@ Route::get('/choose', [HomeController::class, 'choose']);
 Route::get('/product', [HomeController::class, 'product']);
 
 Route::get('/profile', [HomeController::class, 'profile']);
+
+Route::post('/contact', [HomeController::class, 'contact'])->name('contact');

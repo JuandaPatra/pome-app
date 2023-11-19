@@ -264,6 +264,10 @@
         background-color: #FD8C05;
         box-shadow: 0px 0px 0px 2px white inset;
     }
+
+    .radiofalse {
+        border: 1px solid red !important;
+    }
 </style>
 
 
@@ -290,7 +294,7 @@
 
             </div>
         </div>
-       
+
 
         @include('components.navbar')
 </section>
@@ -641,23 +645,23 @@
                 <div class="basis-full lg:basis-2/3 bg-[#EFEFEF] rounded-tr-[30px] order-message-2">
                     <h1 class="mt-[30px] px-[40px] w-full lg:w-[54%] text-[#444444] text-[16px] font-bold font-Montserrat">Interested in becoming the agent of sustainable energy? Hit us up here:</h1>
                     <div class="mb-4 pl-[40px] pr-[60px] mt-[30px]">
-                        <input class=" bg-transparent w-full placeholder:text-gray-500 pb-[14px]" type="text" placeholder="Name" style="border: none;border-bottom: 1px solid #444444;">
+                        <input class=" bg-transparent w-full placeholder:text-gray-500 pb-[14px] name-input" type="text" placeholder="Name" style="border: none;border-bottom: 1px solid #444444;" required>
                     </div>
                     <div class="mb-4 pl-[40px] pr-[60px] mt-[25px]">
-                        <input class=" bg-transparent w-full placeholder:text-gray-500 pb-[14px]" type="email" placeholder="Email" style="border: none;border-bottom: 1px solid #444444;">
+                        <input class=" bg-transparent w-full placeholder:text-gray-500 pb-[14px] email-input" type="email" placeholder="Email" style="border: none;border-bottom: 1px solid #444444;" required>
                     </div>
 
 
                     <div class="relative mb-4 pl-[40px] pr-[60px] mt-[25px]">
-                        <textarea class=" bg-transparent resize-none w-full  placeholder:text-gray-500 pb-[20px]" placeholder="Message" style="border: none;border-bottom: 1px solid #444444;outline: none;"></textarea>
-                        <button class="absolute  transform -translate-y-1/2 top-[20px] right-[40px]  text-white font-bold py-2 px-4 rounded"><img src="{{ asset('images/homepage/submit-b.png') }}" alt=""></button>
+                        <textarea class=" bg-transparent resize-none w-full  placeholder:text-gray-500 pb-[20px] message-input" placeholder="Message" style="border: none;border-bottom: 1px solid #444444;outline: none;" required></textarea>
+                        <button class="absolute  transform -translate-y-1/2 top-[20px] right-[40px]  text-white font-bold py-2 px-4 rounded" type="submit" id="message-button"><img src="{{ asset('images/homepage/submit-b.png') }}" alt=""></button>
                     </div>
 
                     <div class="relative mb-4 pl-[40px] pr-[60px] mt-[25px]">
                         <div class="flex items-center mr-4 mb-4">
-                            <input id="radio1" type="radio" name="radio" class="hidden" />
+                            <input id="radio1" type="radio" name="radio" class="hidden " />
                             <label for="radio1" class="flex items-center cursor-pointer">
-                                <span class="w-4 h-4 inline-block mr-1 border border-grey"></span>
+                                <span class="w-4 h-4 inline-block mr-1 border border-grey radioCheck"></span>
                                 Agree to Terms of Services</label>
                         </div>
 
@@ -679,7 +683,23 @@
 @include('components.drawer')
 @include('components.footer')
 
-
+<div class="fixed z-10 overflow-y-auto top-0 w-full left-0 modal-open hidden" id="modal">
+    <div class="flex items-center justify-center min-height-100vh pt-4 px-4 pb-20 text-center sm:block sm:p-0">
+        <div class="fixed inset-0 transition-opacity">
+            <div class="absolute inset-0 bg-gray-900 opacity-75" />
+        </div>
+        <span class="hidden sm:inline-block sm:align-middle sm:h-screen">&#8203;</span>
+        <div class="inline-block align-center bg-white rounded-lg text-left overflow-hidden shadow-xl transform transition-all sm:my-8 sm:align-middle sm:max-w-lg sm:w-full" role="dialog" aria-modal="true" aria-labelledby="modal-headline">
+            <div class="bg-white px-4 pt-5 pb-4 sm:p-6 sm:pb-4">
+                <h1>Success</h1>
+            </div>
+            <div class="bg-gray-200 px-4 py-3 text-right">
+                <button type="button" class="py-2 px-4 bg-gray-500 text-white rounded hover:bg-gray-700 mr-2 close-modal"> Close</button>
+                <!-- <button type="button" class="py-2 px-4 bg-blue-500 text-white rounded hover:bg-blue-700 mr-2"><i class="fas fa-plus"></i> Create</button> -->
+            </div>
+        </div>
+    </div>
+</div>
 
 
 
@@ -692,6 +712,76 @@
 
 <script>
     $(document).ready(function() {
+
+        let base_url = window.location.origin;
+
+
+        $('.close-modal').on('click', function() {
+            $('.modal-open').addClass('hidden')
+        })
+
+        $('#message-button').on('click', function(e) {
+
+            let name = $('.name-input').val()
+            let email = $('.email-input').val()
+            let message = $('.message-input').val()
+
+            let data = {
+                name,
+                email,
+                message
+            }
+
+            let radio = $("#radio1").is(":checked")
+            if (!radio) {
+                $('.radioCheck').addClass('radiofalse');
+                e.preventDefault();
+            } else {
+
+                $.ajax({
+                    type: "POST",
+                    url: `${base_url}/contact`,
+                    headers: {
+                        "X-CSRF-TOKEN": $('meta[name="csrf-token"]').attr(
+                            "content"
+                        ),
+                    },
+                    data: data,
+                    error: function(xhr, error) {
+
+
+
+                        if (xhr.status === 400) {
+                            alert('mohon lengkapi data');
+
+
+                        }
+
+
+                    },
+                    success: function(data) {
+
+                        $('.radioCheck').removeClass('radiofalse')
+
+                        $('.name-input').val('')
+                        $('.email-input').val('')
+                        $('.message-input').val('')
+
+                        $("#radio1").attr("checked", false);
+
+                        $('.modal-open').removeClass('hidden')
+                    },
+                });
+
+            }
+
+
+
+
+
+
+
+        })
 
         let tabsContainer = document.querySelector("#tabs");
 
