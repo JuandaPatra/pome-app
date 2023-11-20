@@ -280,7 +280,7 @@
 <section class="  mt-[100px]">
     <div class="mt-[100px]">
         <div class="flex justify-center  mt-[59px] text-[50px] bg-gradient-to-t from-[#FD8C05] h-[125px]">
-            <h1 class=" block text-center w-[850px] text-[30px] font-foobar  font-extrabold text-white pt-[40px]">
+            <h1 class=" block text-center w-[850px] text-[30px] font-MontserratExtrabold text-white pt-[40px]">
                 Palm Oil Mill Effluent
             </h1>
 
@@ -298,7 +298,7 @@
         <div class="gap-8 columns-1 lg:columns-2">
             <img src="{{ asset('images/choose/fome.png') }}" alt="">
             <div>
-                <h1 class="text-[#444444] text-[25px] lg:text-[30px] font-bold mt-[50px] mb-3">
+                <h1 class="text-[#444444] text-[25px] lg:text-[30px] font-MontserratExtrabold mt-[50px] mb-3">
                     WHY YOU SHOULD <br> CHOOSE US:
                 </h1>
 
@@ -361,7 +361,7 @@
 <section class="px-0 lg:px-4 pb-[50px] lg:pb-[100px] pt-4">
     <div class="container-lg">
         <div class="flex justify-center  mt-[59px] text-[50px]">
-            <h1 class="block text-center w-[850px] text-[20px] lg:text-[30px] font-foobar  font-extrabold text-[#FD8C05] ">
+            <h1 class="block text-center w-[850px] text-[20px] lg:text-[30px] font-MontserratExtrabold text-[#FD8C05] ">
                 Plant Tour (photo gallery)
             </h1>
 

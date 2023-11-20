@@ -280,7 +280,7 @@
         <div class="banner-slider">
             <div class="relative ">
                 <div class="absolute top-[230px] lg:top-[350px] left-[56px] right-0 w-[581px]">
-                    <h1 class="hidden lg:block font-extrabold text-[20px] lg:text-[40px] tracking-[4px] text-[#444444]">CREATING WISDOM THROUGH OUR WASTE</h1>
+                    <h1 class="hidden lg:block font-MontserratExtrabold text-[20px] lg:text-[40px] tracking-[4px] text-[#444444]">CREATING WISDOM THROUGH OUR WASTE</h1>
                     <p class="hidden lg:block w-auto lg:w-[475px] mb-[30px] font-Montserrat">
                         We aim to prove that our role in advancing the economy through oil waste management brings long-term sustainability to the environment for a better quality of life.
                     </p>
@@ -308,7 +308,7 @@
 <section class="px-4 pb-[100px] pt-4">
     <div class="container-lg">
         <div class="flex justify-center  mt-[59px] text-[50px] ">
-            <h1 class=" text-center w-[850px] text-[30px] font-foobar  font-extrabold ">
+            <h1 class=" text-center w-[850px] text-[30px] font-MontserratExtrabold">
                 In A Nutshell
             </h1>
 
@@ -378,7 +378,7 @@
 
         <div class="gap-8 columns-1 lg:columns-2">
             <div>
-                <h1 class="text-[#444444] text-[30px] font-bold mt-[50px]">
+                <h1 class="text-[#444444] text-[30px] font-MontserratExtrabold mt-[50px]">
                     Our Certifications
                 </h1>
                 <p class="w-[95%] mt-[20px] font-Montserrat">
@@ -403,7 +403,7 @@
 <section class="px-0 lg:px-4 pb-[100px] pt-4">
     <div class="container-lg">
         <div class="flex justify-center  mt-[59px] text-[50px]">
-            <h1 class=" text-center w-[850px] text-[30px] font-foobar  font-extrabold text-[#FD8C05] ">
+            <h1 class=" text-center w-[850px] text-[30px] font-MontserratExtrabold text-[#FD8C05] ">
                 Plant Tour (photo gallery)
             </h1>
 
@@ -494,8 +494,8 @@
         <div>
             <!-- Tabs -->
             <ul id="tabs" class="inline-flex pt-2 px-0 w-full border-b border-[#444444]">
-                <li class="bg-white px-4 text-[#FD8C05] font-semibold py-2 rounded-t border-t border-r border-l -mb-px w-1/2 text-[14px] lg:text-[30px] "><a id="default-tab" href="#first">Product Highlight overview</a></li>
-                <li class="px-4 text-gray-800 font-semibold py-2 rounded-t w-1/2 text-[14px] lg:text-[30px]"><a href="#second">End of application overview</a></li>
+                <li class="bg-white px-4 tracking-[1px] text-[#FD8C05] font-MontserratExtrabold   py-3 rounded-t border-t border-r border-l -mb-px w-1/2 text-[14px] lg:text-[25px] "><a id="default-tab" href="#first">Product Highlight Overview</a></li>
+                <li class="px-4 text-[#444444cc] font-MontserratExtrabold tracking-[1px] py-3 rounded-t w-1/2 text-[14px] lg:text-[25px] bg-[#D9D9D9]"><a href="#second">End of Application Overview</a></li>
 
             </ul>
 
@@ -609,7 +609,7 @@
             <div class="flex flex-col lg:flex-row h-full w-full">
                 <div class="basis-full lg:basis-1/3 order-message-1">
                     <div class="flex justify-center">
-                        <h1 class="mt-[10px] lg:mt-[60px] text-[#FD8C05] text-[25px]  tracking-widest font-extrabold">CONTACT US</h1>
+                        <h1 class="mt-[10px] lg:mt-[60px] text-[#FD8C05] text-[25px]  tracking-widest font-MontserratExtrabold">CONTACT US</h1>
                     </div>
                     <div class="mt-[20px] flex justify-center ml-[20px] text-[15px]">
                         <img src="{{ asset('images/homepage/located.png') }}" alt="" class="h-[20px] w-[20px] mr-2 mt-[10px]">
@@ -790,7 +790,7 @@
 
                 for (let i = 0; i < tabContents.children.length; i++) {
 
-                    tabTogglers[i].parentElement.classList.remove("border-t", "border-r", "border-l", "-mb-px", "bg-white");
+                    tabTogglers[i].parentElement.classList.remove("border-t", "border-r", "border-l", "-mb-px", "bg-white", "text-[#FD8C05]");
                     tabContents.children[i].classList.remove("hidden");
                     if ("#" + tabContents.children[i].id === tabName) {
                         continue;
@@ -798,7 +798,7 @@
                     tabContents.children[i].classList.add("hidden");
 
                 }
-                e.target.parentElement.classList.add("border-t", "border-r", "border-l", "-mb-px", "bg-white");
+                e.target.parentElement.classList.add("border-t", "border-r", "border-l", "-mb-px", "bg-white", "text-[#FD8C05]");
             });
         });
 

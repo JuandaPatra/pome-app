@@ -10,6 +10,8 @@ module.exports = {
         extend: {
             fontFamily: {
                 Montserrat: ["Montserrat", "cursive"],
+                MontserratExtrabold: ["Montserrat-ExtraBold", "cursive"],
+                MontserratBold: ["Montserrat-Bold", "cursive"],
             },
         },
     },

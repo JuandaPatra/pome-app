@@ -222,22 +222,7 @@
         /* Smooth transition */
     }
 
-    .move {
-        /* transform: translate(-50px, -50px); */
-
-        /* Move the image position */
-    }
-
-    /* .zoomImage{
-        image
-    } */
-
-
-    /* .profile-detail-slider {
-        max-width: 100vw;
-        width: 100%;
-        overflow: hidden;
-    } */
+   
 </style>
 
 
@@ -245,52 +230,6 @@
 <section id="banner-header">
 
     <div class="relative ">
-
-        <!-- <nav class="fixed  z-30 w-full top-0 left-0 px-4 sm:px-4 py-4 xl:px-[70px] lg:pt-[25px] h-[70px] lg:h-[100px] navbar-top bg-white border-b-2 border-[#444444]">
-            <div class="container flex flex-wrap justify-between items-center mx-auto">
-                <a href="" class="flex items-center">
-                    <img src="{{ asset('images/PT_Surya_Golden_Energy.png') }}" class="absolute top-[34px] left-[10px] lg:left-[60px] mr-3  h-[14px] lg:h-[24px] w-[125px]  lg:w-[300px] logo-ejs" alt="fome Logo">
-                </a>
-
-                <li class="lg:hidden flex items-center ml-[49%] lg:ml-[30%]">
-                    <a href="" class="text-[#FF0000] leading-[20px] block pr-0 lg:pr-4 pl-3 font-head md:text-[18px] lg:text-[22px]" aria-current="page"><img src="{{ asset('images/logoejaudax.png') }}" class="h-[30px]" alt=""></a>
-                </li>
-
-
-                <a id="menu-hamburger" class="lg:hidden" data-drawer-target="drawer-example" data-drawer-show="drawer-example" aria-controls="drawer-example">
-                    <div class="space-y-2">
-                        <span class="block w-8 h-0.5 bg-gray-600"></span>
-                        <span class="block w-8 h-0.5 bg-gray-600"></span>
-                        <span class="block w-5 h-0.5 bg-gray-600"></span>
-                    </div>
-                </a>
-
-
-
-
-                <div class=" w-full md:block md:w-auto pb-8 hidden lg:block" id="navbar-default">
-                    <ul class="flex flex-col px- md:flex-row md:space-x-2 lg:space-x-4 md:mt-0 ">
-                        <li class="flex items-center ">
-                            <a href="/" class="text-black leading-[20px] block pr-4 pl-3 font-foobar md:text-[18px] lg:text-[16px] hover:text-white navbar-button" aria-current="page">HOME</a>
-                        </li>
-                        <li class="flex items-center">
-                            <a href="/mekanisme" class="text-black  leading-[20px] block pr-4 pl-3 font-foobar md:text-[18px] lg:text-[16px]  navbar-button" aria-current="page">OUR PROFILE</a>
-                        </li>
-                        <li class="flex items-center">
-                            <a href="/mekanisme" class="text-black leading-[20px] block pr-4 pl-3 font-foobar md:text-[18px] lg:text-[16px]  navbar-button" aria-current="page">WHY CHOOSE US</a>
-                        </li>
-                        <li class="flex items-center">
-                            <a href="/mekanisme" class="text-black  leading-[20px] block pr-4 pl-3 font-foobar md:text-[18px] lg:text-[16px]  navbar-button" aria-current="page">PRODUCT & SERVICES</a>
-                        </li>
-                        <li class="flex items-center">
-                            <a href="/" class="text-[#FF0000] leading-[20px] block pr-4 pl-3 font-head md:text-[18px] lg:text-[22px]" aria-current="page"><img src="{{ asset('images/logoejaudax.png') }}" class="h-[50px]" alt=""></a>
-                        </li>
-
-
-                    </ul>
-                </div>
-            </div>
-        </nav> -->
         @include('components.navbar')
 </section>
 
@@ -301,8 +240,8 @@
             <img src="{{ asset('images/profile/profile-1.png') }}" alt="" class=" w-[100vw] h-[600px] opacity-50 cursor-pointer image-1 move-image hover:scale-125 ">
             <div class="absolute bottom-20 flex justify-center px-5">
                 <div>
-                    <h1 class=" font-bold text-[30px] uppercase">Vision & <br> Mission</h1>
-                    <p class=" text-[#444444] text-[15px]">
+                    <h1 class=" font-MontserratExtrabold text-[30px] uppercase">Vision & <br> Mission</h1>
+                    <p class=" text-[#444444] text-[15px] font-Montserrat">
                         We ensure that the steps we take are in line with our vision and mission of improving environmental quality.
 
                     </p>
@@ -315,8 +254,8 @@
             <img src="{{ asset('images/profile/profile-2.png') }}" alt="" class=" w-[100vw] h-[600px] opacity-50 cursor-pointer image-2 move-image hover:scale-125">
             <div class="absolute bottom-20 flex justify-center px-5">
                 <div>
-                    <h1 class=" font-bold text-[30px] uppercase">Our Values</h1>
-                    <p class=" text-[#444444] text-[15px]">
+                    <h1 class=" font-MontserratExtrabold text-[30px] uppercase">Our Values</h1>
+                    <p class=" text-[#444444] text-[15px] font-Montserrat">
                         The contributions we have made to date are inseparable from the values we adhere to as a benchmark for our success.
                     </p>
                 </div>
@@ -328,8 +267,8 @@
             <img src="{{ asset('images/profile/profile-3.png') }}" alt="" class=" w-[100vw] h-[600px] opacity-50 cursor-pointer image-3 move-image hover:scale-125">
             <div class="absolute bottom-20 flex justify-center px-5">
                 <div>
-                    <h1 class=" font-bold text-[30px] uppercase">Company <br> Story</h1>
-                    <p class=" text-[#444444] text-[15px]">
+                    <h1 class=" font-MontserratExtrabold text-[30px] uppercase">Company <br> Story</h1>
+                    <p class=" text-[#444444] text-[15px] font-Montserrat">
                         It started with our concern about unprocessed palm oil waste which is one of the biggest causes of environmental pollution.
                     </p>
                 </div>
@@ -341,8 +280,8 @@
             <img src="{{ asset('images/profile/profile-4.png') }}" alt="" class=" w-[100vw] h-[600px] opacity-50 cursor-pointer image-4 move-image hover:scale-125">
             <div class="absolute bottom-20 flex justify-center px-5">
                 <div>
-                    <h1 class=" font-bold text-[30px] uppercase">our<br> Milestone</h1>
-                    <p class=" text-[#444444] text-[15px]">
+                    <h1 class=" font-MontserratExtrabold text-[30px] uppercase">our<br> Milestone</h1>
+                    <p class=" text-[#444444] text-[15px] font-Montserrat">
                         We started our steps in 2004 from the smallest effort, namely collecting palm oil waste and supplying it to national companies producing bar soap.
                     </p>
                 </div>
@@ -366,7 +305,7 @@
                 <div class="flex flex-col lg:flex-row">
                     <div class="basis-full lg:basis-4/6">
 
-                        <h1 class=" font-bold text-[20px] lg:text-[50px] text-white uppercase tracking-wide">Vision & Mission</h1>
+                        <h1 class=" font-MontserratExtrabold text-[20px] lg:text-[50px] text-white uppercase tracking-wide">Vision & Mission</h1>
 
                         <div class=" w-full lg:w-[640px] pl-[0px] lg:pl-[70px]">
 
@@ -406,9 +345,10 @@
                     <div class="basis-full lg:basis-2/6">
                         <div class=" relative mt-[10px] lg:mt-[100px] w-[300px]">
 
-                            <img src="{{ asset('images/profile/profile-next-1.png') }}" alt="" class="absolute w-[300px] h-[300px]">
-                            <a class="swipe-to block absolute top-[130px] right-[100px] translate-x-[118px] translate-y-[-7px]" data-to="1">
-                                <img src="{{ asset('images/profile/next.png') }}" alt="">
+                            <img src="{{ asset('images/profile/profile-next-1.png') }}" alt="" class="absolute w-[250px] lg:w-[300px] h-[250px] lg:h-[300px]">
+                            <a class="swipe-to block absolute top-[130px] right-[100px] translate-x-[79px] lg:translate-x-[118px] translate-y-[-26px] lg:translate-y-[-7px]" data-to="1">
+                                <img src="{{ asset('images/profile/next.png') }}" alt=""> 
+
                             </a>
 
                         </div>
@@ -427,7 +367,7 @@
                 <div class="flex flex-col lg:flex-row">
                     <div class="basis-full lg:basis-4/6">
 
-                        <h1 class=" font-bold text-[20px] lg:text-[50px] text-white uppercase tracking-wide">OUR VALUES</h1>
+                        <h1 class=" font-MontserratExtrabold text-[20px] lg:text-[50px] text-white uppercase tracking-wide">OUR VALUES</h1>
 
                         <div class=" w-full lg:w-[640px] pl-[0px] lg:pl-[70px] mt-[120px]">
 
@@ -463,8 +403,8 @@
                     <div class="basis-full lg:basis-2/6">
                         <div class=" relative mt-[10px] lg:mt-[100px] w-[300px]">
 
-                            <img src="{{ asset('images/profile/profile-next-2.png') }}" alt="" class="absolute w-[300px] h-[300px]">
-                            <a class="swipe-to block absolute top-[130px] right-[100px] translate-x-[118px] translate-y-[-7px]" data-to="2">
+                            <img src="{{ asset('images/profile/profile-next-2.png') }}" alt="" class="absolute w-[250px] lg:w-[300px] h-[250px] lg:h-[300px]">
+                            <a class="swipe-to block absolute top-[130px] right-[100px] translate-x-[79px] lg:translate-x-[118px] translate-y-[-26px] lg:translate-y-[-7px]" data-to="2">
                                 <img src="{{ asset('images/profile/next.png') }}" alt="">
                             </a>
 
@@ -487,8 +427,8 @@
                 <div class="flex flex-col lg:flex-row">
                     <div class="basis-full lg:basis-4/6">
 
-                        <h1 class=" font-bold text-[20px] lg:text-[50px] text-white uppercase tracking-wide hidden lg:block">COMPANY <br> STORY</h1>
-                        <h1 class="block lg:hidden font-bold text-[20px] lg:text-[50px] text-white uppercase tracking-wide">COMPANY STORY</h1>
+                        <h1 class=" font-MontserratExtrabold text-[20px] lg:text-[50px] text-white uppercase tracking-wide hidden lg:block">COMPANY <br> STORY</h1>
+                        <h1 class="block lg:hidden font-MontserratExtrabold text-[20px] lg:text-[50px] text-white uppercase tracking-wide">COMPANY STORY</h1>
 
                         <div class="w-auto lg:w-[700px] pl-0 lg:pl-[70px] mt-[30px] lg:mt-[60px]">
 
@@ -509,8 +449,8 @@
                     <div class="basis-full lg:basis-2/6">
                         <div class=" relative mt-[10px] lg:mt-[100px] w-[300px]">
 
-                            <img src="{{ asset('images/profile/profile-next-3.png') }}" alt="" class="absolute w-[300px] h-[300px]">
-                            <a class="swipe-to block absolute top-[130px] right-[100px] translate-x-[118px] translate-y-[-7px]" data-to="3">
+                            <img src="{{ asset('images/profile/profile-next-3.png') }}" alt="" class="absolute w-[250px] lg:w-[300px] h-[250px] lg:h-[300px]">
+                            <a class="swipe-to block absolute top-[130px] right-[100px] translate-x-[79px] lg:translate-x-[118px] translate-y-[-26px] lg:translate-y-[-7px]" data-to="3">
                                 <img src="{{ asset('images/profile/next.png') }}" alt="">
                             </a>
 
@@ -530,7 +470,7 @@
                 <div class="flex flex-col lg:flex-row">
                     <div class="basis-full lg:basis-4/6">
 
-                        <h1 class=" font-bold text-[20px] lg:text-[50px] text-white uppercase tracking-wide">OUR MILESTONE</h1>
+                        <h1 class=" font-MontserratExtrabold text-[20px] lg:text-[50px] text-white uppercase tracking-wide">OUR MILESTONE</h1>
 
                         <div class="w-auto lg:w-[700px] pl-0 lg:pl-[70px] mt-[30px] lg:mt-[100px]">
 
@@ -553,8 +493,8 @@
                     <div class="basis-full lg:basis-2/6">
                         <div class=" relative mt-[10px] lg:mt-[100px] w-[300px]">
 
-                            <img src="{{ asset('images/profile/profile-next-4.png') }}" alt="" class="absolute w-[300px] h-[300px]">
-                            <a class="swipe-to block absolute top-[130px] right-[100px] translate-x-[118px] translate-y-[-7px]" data-to="0">
+                            <img src="{{ asset('images/profile/profile-next-4.png') }}" alt="" class="absolute w-[250px] lg:w-[300px] h-[250px] lg:h-[300px]">
+                            <a class="swipe-to block absolute top-[130px] right-[100px] translate-x-[79px] lg:translate-x-[118px] translate-y-[-26px] lg:translate-y-[-7px]" data-to="0">
                                 <img src="{{ asset('images/profile/next.png') }}" alt="">
                             </a>
 

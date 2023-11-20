@@ -230,7 +230,7 @@
         <div class="gap-8 columns-1 lg:columns-2">
             <img src="{{ asset('images/product/product-1.png') }}" alt="" class="hidden lg:block">
             <div class="mt-[100px] lg:mt-[150px] ">
-                <h1 class="text-[#444444] text-[30px] font-bold mb-3 pt-[30px] lg:pt-[119px]">
+                <h1 class="text-[#444444] text-[30px] font-MontserratExtrabold mb-3 pt-[30px] lg:pt-[119px]">
                     PALM OIL MILL EFFLUENT
                 </h1>
                 <p class="mt-[30px] mb-[36px] font-bold">Jakarta & Lampung</p>
