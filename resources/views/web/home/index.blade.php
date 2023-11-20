@@ -270,6 +270,16 @@
     .radiofalse {
         border: 1px solid red !important;
     }
+
+    .border-input {
+        border: none;
+        border-bottom: 1px solid #444444;
+    }
+
+    .border-red {
+        border: none;
+        border-bottom: 1px solid red;
+    }
 </style>
 
 
@@ -462,8 +472,8 @@
                 </div>
 
             </div>
-           
-            
+
+
         </div>
 
         <div class="tranding-slider-control">
@@ -636,16 +646,19 @@
                 <div class="basis-full lg:basis-2/3 bg-[#EFEFEF] rounded-tr-[30px] order-message-2">
                     <h1 class="mt-[30px] px-[40px] w-full lg:w-[54%] text-[#444444] text-[16px] font-bold font-Montserrat">Interested in becoming the agent of sustainable energy? Hit us up here:</h1>
                     <div class="mb-4 pl-[40px] pr-[60px] mt-[30px]">
-                        <input class=" bg-transparent w-full placeholder:text-gray-500 pb-[14px] name-input" type="text" placeholder="Name" style="border: none;border-bottom: 1px solid #444444;" required>
+                        <input class=" bg-transparent w-full placeholder:text-gray-500 pb-[14px] name-input border-input" type="text" placeholder="Name" required>
+                        <!-- <h6 class="message-name text-red-600">*must filled</h6> -->
                     </div>
                     <div class="mb-4 pl-[40px] pr-[60px] mt-[25px]">
-                        <input class=" bg-transparent w-full placeholder:text-gray-500 pb-[14px] email-input" type="email" placeholder="Email" style="border: none;border-bottom: 1px solid #444444;" required>
+                        <input class=" bg-transparent w-full placeholder:text-gray-500 pb-[14px] email-input border-input" type="email" placeholder="Email" required>
+                        <!-- <h6 class="message-email text-red-600">*must filled</h6> -->
                     </div>
 
 
                     <div class="relative mb-4 pl-[40px] pr-[60px] mt-[25px]">
-                        <textarea class=" bg-transparent resize-none w-full  placeholder:text-gray-500 pb-[20px] message-input" placeholder="Message" style="border: none;border-bottom: 1px solid #444444;outline: none;" required></textarea>
+                        <textarea class=" bg-transparent resize-none w-full  placeholder:text-gray-500 pb-[20px] message-input border-input" placeholder="Message" required></textarea>
                         <button class="absolute  transform -translate-y-1/2 top-[20px] right-[40px]  text-white font-bold py-2 px-4 rounded" type="submit" id="message-button"><img src="{{ asset('images/homepage/submit-b.png') }}" alt=""></button>
+                        <!-- <h6 class="message-name text-red-600">*must filled</h6> -->
                     </div>
 
                     <div class="relative mb-4 pl-[40px] pr-[60px] mt-[25px]">
@@ -653,7 +666,7 @@
                             <input id="radio1" type="radio" name="radio" class="hidden " />
                             <label for="radio1" class="flex items-center cursor-pointer">
                                 <span class="w-4 h-4 inline-block mr-1 border border-grey radioCheck"></span>
-                                Agree to Terms of Services <span class="filled-radio hidden text-red-600">(Please filled)</span></label> 
+                                Agree to Terms of Services <span class="filled-radio hidden text-red-600">(Please filled)</span></label>
                         </div>
 
                     </div>
@@ -745,7 +758,33 @@
 
 
                         if (xhr.status === 400) {
-                            alert('mohon lengkapi data');
+                            if (xhr.responseJSON['email']) {
+
+                                $('.email-input').removeClass('border-input')
+                                $('.email-input').addClass('border-red')
+                            } else {
+                                $('.email-input').addClass('border-input')
+                                $('.email-input').removeClass('border-red')
+                            }
+
+                            if (xhr.responseJSON['name']) {
+
+                                $('.name-input').removeClass('border-input')
+                                $('.name-input').addClass('border-red')
+                            } else {
+                                $('.name-input').addClass('border-input')
+                                $('.name-input').removeClass('border-red')
+                            }
+
+                            if (xhr.responseJSON['message']) {
+
+                                $('.message-input').removeClass('border-input')
+                                $('.message-input').addClass('border-red')
+                            } else {
+                                $('.message-input').addClass('border-input')
+                                $('.message-input').removeClass('border-red')
+                            }
+
 
 
                         }
@@ -766,6 +805,15 @@
                         $('.filled-radio').removeClass('bg-transparent')
 
                         $('.modal-open').removeClass('hidden')
+
+                        $('.message-input').addClass('border-input')
+                        $('.message-input').removeClass('border-red')
+
+                        $('.name-input').addClass('border-input')
+                        $('.name-input').removeClass('border-red')
+
+                        $('.email-input').addClass('border-input')
+                        $('.email-input').removeClass('border-red')
                     },
                 });
 
@@ -821,7 +869,7 @@
                 depth: 100,
                 modifier: 2.5,
             },
-            
+
             navigation: {
                 nextEl: '.swiper-button-next',
                 prevEl: '.swiper-button-prev',

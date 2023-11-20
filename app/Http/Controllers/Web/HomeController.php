@@ -51,7 +51,7 @@ class HomeController extends Controller
         if ($validator->fails()) {
             
 
-            return response($validator->errors(), 400);
+            return response($validator->messages(), 400);
         }
         DB::beginTransaction();
 
