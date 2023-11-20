@@ -200,7 +200,8 @@
     @media (max-width:450px) {
         .tranding-slider-control .swiper-button-next {
             left: 80% !important;
-            transform: translateX(-80%) !important;
+            /* transform: translateX(-80%) !important; */
+            transform: translate(-29px, -80px) !important;
         }
     }
 
@@ -214,7 +215,8 @@
     @media (max-width:450px) {
         .tranding-slider-control .swiper-button-prev {
             left: 20% !important;
-            transform: translateX(-20%) !important;
+            /* transform: translateX(-20%) !important; */
+            transform: translate(-12px, -80px) !important;
         }
     }
 
@@ -428,7 +430,7 @@
             <!-- Slide-start -->
             <div class="swiper-slide tranding-slide">
                 <div class="tranding-slide-img">
-                    <img src="{{ asset('images/homepage/image-slider-1.png') }}" alt="Tranding">
+                    <img src="{{ asset('images/homepage/image-slider-2.png') }}" alt="Tranding">
                 </div>
 
             </div>
@@ -436,7 +438,7 @@
             <!-- Slide-start -->
             <div class="swiper-slide tranding-slide">
                 <div class="tranding-slide-img">
-                    <img src="{{ asset('images/homepage/image-slider-1.png') }}" alt="Tranding">
+                    <img src="{{ asset('images/homepage/image-slider-3.png') }}" alt="Tranding">
                 </div>
 
             </div>
@@ -444,7 +446,7 @@
             <!-- Slide-start -->
             <div class="swiper-slide tranding-slide">
                 <div class="tranding-slide-img">
-                    <img src="{{ asset('images/homepage/image-slider-1.png') }}" alt="Tranding">
+                    <img src="{{ asset('images/homepage/image-slider-4.png') }}" alt="Tranding">
                 </div>
 
             </div>
@@ -452,27 +454,12 @@
             <!-- Slide-start -->
             <div class="swiper-slide tranding-slide">
                 <div class="tranding-slide-img">
-                    <img src="{{ asset('images/homepage/image-slider-1.png') }}" alt="Tranding">
+                    <img src="{{ asset('images/homepage/image-slider-5.png') }}" alt="Tranding">
                 </div>
 
             </div>
-            <!-- Slide-end -->
-            <!-- Slide-start -->
-            <div class="swiper-slide tranding-slide">
-                <div class="tranding-slide-img">
-                    <img src="{{ asset('images/homepage/image-slider-1.png') }}" alt="Tranding">
-                </div>
-
-            </div>
-            <!-- Slide-end -->
-            <!-- Slide-start -->
-            <div class="swiper-slide tranding-slide">
-                <div class="tranding-slide-img">
-                    <img src="{{ asset('images/homepage/image-slider-1.png') }}" alt="Tranding">
-                </div>
-
-            </div>
-            <!-- Slide-end -->
+           
+            
         </div>
 
         <div class="tranding-slider-control">
@@ -811,12 +798,12 @@
             });
         });
 
-        console.log('tes')
 
         var TrandingSlider = new Swiper('.tranding-slider', {
             effect: 'coverflow',
             grabCursor: true,
             centeredSlides: true,
+            // centeredSlides: false,
             loop: true,
             slidesPerView: 'auto',
             coverflowEffect: {
@@ -825,10 +812,7 @@
                 depth: 100,
                 modifier: 2.5,
             },
-            pagination: {
-                el: '.swiper-pagination',
-                clickable: true,
-            },
+            
             navigation: {
                 nextEl: '.swiper-button-next',
                 prevEl: '.swiper-button-prev',

@@ -228,6 +228,10 @@
         /* Move the image position */
     }
 
+    /* .zoomImage{
+        image
+    } */
+
 
     /* .profile-detail-slider {
         max-width: 100vw;
@@ -293,8 +297,8 @@
 
 <section class="pt-[0px] lg:pt-[100px] image-section">
     <div class="profile-slider h-[600px]">
-        <div class="relative image-hove" data-profile=1>
-            <img src="{{ asset('images/profile/profile-1.png') }}" alt="" class=" w-[100vw] h-[600px] opacity-50 cursor-pointer image-1 move-image">
+        <div class="relative image-hove overflow-hidden" data-profile=1>
+            <img src="{{ asset('images/profile/profile-1.png') }}" alt="" class=" w-[100vw] h-[600px] opacity-50 cursor-pointer image-1 move-image hover:scale-125 ">
             <div class="absolute bottom-20 flex justify-center px-5">
                 <div>
                     <h1 class=" font-bold text-[30px] uppercase">Vision & <br> Mission</h1>
@@ -307,8 +311,8 @@
             </div>
         </div>
 
-        <div class="relative image-hove" data-profile=2>
-            <img src="{{ asset('images/profile/profile-2.png') }}" alt="" class=" w-[100vw] h-[600px] opacity-50 cursor-pointer image-2 move-image">
+        <div class="relative image-hove overflow-hidden" data-profile=2>
+            <img src="{{ asset('images/profile/profile-2.png') }}" alt="" class=" w-[100vw] h-[600px] opacity-50 cursor-pointer image-2 move-image hover:scale-125">
             <div class="absolute bottom-20 flex justify-center px-5">
                 <div>
                     <h1 class=" font-bold text-[30px] uppercase">Our Values</h1>
@@ -320,8 +324,8 @@
             </div>
         </div>
 
-        <div class="relative image-hove" data-profile=3>
-            <img src="{{ asset('images/profile/profile-3.png') }}" alt="" class=" w-[100vw] h-[600px] opacity-50 cursor-pointer image-3 move-image">
+        <div class="relative image-hove overflow-hidden" data-profile=3>
+            <img src="{{ asset('images/profile/profile-3.png') }}" alt="" class=" w-[100vw] h-[600px] opacity-50 cursor-pointer image-3 move-image hover:scale-125">
             <div class="absolute bottom-20 flex justify-center px-5">
                 <div>
                     <h1 class=" font-bold text-[30px] uppercase">Company <br> Story</h1>
@@ -333,8 +337,8 @@
             </div>
         </div>
 
-        <div class="relative image-hove" data-profile=4>
-            <img src="{{ asset('images/profile/profile-4.png') }}" alt="" class=" w-[100vw] h-[600px] opacity-50 cursor-pointer image-4 move-image">
+        <div class="relative image-hove overflow-hidden" data-profile=4>
+            <img src="{{ asset('images/profile/profile-4.png') }}" alt="" class=" w-[100vw] h-[600px] opacity-50 cursor-pointer image-4 move-image hover:scale-125">
             <div class="absolute bottom-20 flex justify-center px-5">
                 <div>
                     <h1 class=" font-bold text-[30px] uppercase">our<br> Milestone</h1>
@@ -353,8 +357,8 @@
 
 <section class="lg:pt-[100px] description-section hidden">
     <div class="profile-detail-slider h-[1005px] lg:h-[600px]">
-        <div class="relative w-[100vw]" data-to=0 style="width: 100% !important;">
-            <img src="{{ asset('images/profile/profile-det-1.png') }}" alt="" class="h-[1005px]  lg:h-[600px] w-[100vw] object-cover ">
+        <div class="relative w-[100vw] " data-to=0 style="width: 100% !important;">
+            <img src="{{ asset('images/profile/profile-det-1.png') }}" alt="" class="h-[1005px]  lg:h-[600px] w-[100vw] object-cover zoomImage">
 
             <div class="absolute top-20 w-full px-10 ">
 
