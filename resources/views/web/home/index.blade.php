@@ -653,7 +653,7 @@
                             <input id="radio1" type="radio" name="radio" class="hidden " />
                             <label for="radio1" class="flex items-center cursor-pointer">
                                 <span class="w-4 h-4 inline-block mr-1 border border-grey radioCheck"></span>
-                                Agree to Terms of Services</label>
+                                Agree to Terms of Services <span class="filled-radio hidden text-red-600">(Please filled)</span></label> 
                         </div>
 
                     </div>
@@ -726,6 +726,8 @@
             let radio = $("#radio1").is(":checked")
             if (!radio) {
                 $('.radioCheck').addClass('radiofalse');
+                $('.filled-radio').removeClass('hidden')
+                $('.filled-radio').addClass('bg-transparent')
                 e.preventDefault();
             } else {
 
@@ -759,6 +761,9 @@
                         $('.message-input').val('')
 
                         $("#radio1").attr("checked", false);
+
+                        $('.filled-radio').addClass('hidden')
+                        $('.filled-radio').removeClass('bg-transparent')
 
                         $('.modal-open').removeClass('hidden')
                     },
