@@ -385,7 +385,11 @@
                     We ensure that the business we run is recognized by leading international certification bodies that support the movement to reduce greenhouse gas emissions, protect the natural environment and social sustainability.
                 </p>
             </div>
-            <img src="{{ asset('images/homepage/certifications.png') }}" alt="">
+            <div class="flex flex-col lg:flex-row h-[250px]">
+                <img src="{{ asset('images/homepage/ins-t.png') }}" alt="" class="w-[265px] lg:w-[200px] h-[100px] mt-[20px] lg:mt-[100px] mr-[50px]">
+                <img src="{{ asset('images/homepage/iscc-t.png') }}" alt="" class="w-[250px] lg:w-[200px] h-[100px] mt-[20px] lg:mt-[100px]">
+
+            </div>
         </div>
         <div class="flex justify-center  mt-[59px] text-[50px] ">
 
@@ -430,7 +434,7 @@
             <!-- Slide-start -->
             <div class="swiper-slide tranding-slide">
                 <div class="tranding-slide-img">
-                    <img src="{{ asset('images/homepage/image-slider-2.png') }}" alt="Tranding">
+                    <img src="{{ asset('images/homepage/image-slider-21.png') }}" alt="Tranding">
                 </div>
 
             </div>
@@ -438,7 +442,7 @@
             <!-- Slide-start -->
             <div class="swiper-slide tranding-slide">
                 <div class="tranding-slide-img">
-                    <img src="{{ asset('images/homepage/image-slider-3.png') }}" alt="Tranding">
+                    <img src="{{ asset('images/homepage/image-slider-31.png') }}" alt="Tranding">
                 </div>
 
             </div>
@@ -446,7 +450,7 @@
             <!-- Slide-start -->
             <div class="swiper-slide tranding-slide">
                 <div class="tranding-slide-img">
-                    <img src="{{ asset('images/homepage/image-slider-4.png') }}" alt="Tranding">
+                    <img src="{{ asset('images/homepage/image-slider-41.png') }}" alt="Tranding">
                 </div>
 
             </div>
@@ -454,7 +458,7 @@
             <!-- Slide-start -->
             <div class="swiper-slide tranding-slide">
                 <div class="tranding-slide-img">
-                    <img src="{{ asset('images/homepage/image-slider-5.png') }}" alt="Tranding">
+                    <img src="{{ asset('images/homepage/image-slider-51.png') }}" alt="Tranding">
                 </div>
 
             </div>

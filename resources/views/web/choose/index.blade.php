@@ -392,7 +392,7 @@
             <!-- Slide-start -->
             <div class="swiper-slide tranding-slide">
                 <div class="tranding-slide-img">
-                    <img src="{{ asset('images/homepage/image-slider-1.png') }}" alt="Tranding">
+                    <img src="{{ asset('images/homepage/image-slider-21.png') }}" alt="Tranding">
                 </div>
 
             </div>
@@ -400,7 +400,7 @@
             <!-- Slide-start -->
             <div class="swiper-slide tranding-slide">
                 <div class="tranding-slide-img">
-                    <img src="{{ asset('images/homepage/image-slider-1.png') }}" alt="Tranding">
+                    <img src="{{ asset('images/homepage/image-slider-31.png') }}" alt="Tranding">
                 </div>
 
             </div>
@@ -408,7 +408,7 @@
             <!-- Slide-start -->
             <div class="swiper-slide tranding-slide">
                 <div class="tranding-slide-img">
-                    <img src="{{ asset('images/homepage/image-slider-1.png') }}" alt="Tranding">
+                    <img src="{{ asset('images/homepage/image-slider-41.png') }}" alt="Tranding">
                 </div>
 
             </div>
@@ -416,27 +416,12 @@
             <!-- Slide-start -->
             <div class="swiper-slide tranding-slide">
                 <div class="tranding-slide-img">
-                    <img src="{{ asset('images/homepage/image-slider-1.png') }}" alt="Tranding">
+                    <img src="{{ asset('images/homepage/image-slider-51.png') }}" alt="Tranding">
                 </div>
 
             </div>
-            <!-- Slide-end -->
-            <!-- Slide-start -->
-            <div class="swiper-slide tranding-slide">
-                <div class="tranding-slide-img">
-                    <img src="{{ asset('images/homepage/image-slider-1.png') }}" alt="Tranding">
-                </div>
 
-            </div>
-            <!-- Slide-end -->
-            <!-- Slide-start -->
-            <div class="swiper-slide tranding-slide">
-                <div class="tranding-slide-img">
-                    <img src="{{ asset('images/homepage/image-slider-1.png') }}" alt="Tranding">
-                </div>
 
-            </div>
-            <!-- Slide-end -->
         </div>
 
         <div class="tranding-slider-control">
