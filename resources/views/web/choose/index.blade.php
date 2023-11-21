@@ -4,7 +4,7 @@
 
 
 
-<style>
+<!-- <style>
     .swiper {
         width: 100vw;
         height: 400px;
@@ -261,7 +261,7 @@
         /* background: var(--primary); */
         background-color: red;
     }
-</style>
+</style> -->
 
 
 

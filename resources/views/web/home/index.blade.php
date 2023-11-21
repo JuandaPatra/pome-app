@@ -2,7 +2,7 @@
 
 @section('container')
 
-<style>
+<!-- <style>
     .swiper {
         width: 100vw;
         height: 400px;
@@ -111,13 +111,31 @@
         }
     }
 
+    .swiper-slide-active.tranding-slide .tranding-slide-img img {
+
+        border-top-right-radius: 65px !important;
+        border-bottom-left-radius: 65px !important;
+        opacity: 1 !important;
+    }
+
+    @media (max-width:500px) {
+        .swiper-slide-active.tranding-slide .tranding-slide-img img {
+
+            border-top-right-radius: 35px !important;
+            border-bottom-left-radius: 35px !important;
+            opacity: 1 !important;
+        }
+    }
+
     .tranding-slide .tranding-slide-img img {
 
         width: 640px;
         height: 400px;
         height: 350px;
 
-        border-radius: 2rem;
+        opacity: .6 !important;
+
+
         object-fit: cover;
     }
 
@@ -279,7 +297,7 @@
         border: none;
         border-bottom: 1px solid red;
     }
-</style>
+</style> -->
 
 
 
