@@ -326,18 +326,18 @@
                     </div>
                     <!-- ... -->
                     <div class="flex">
-                        <img src="{{ asset('images/choose/established.png') }}" alt="" class="w-[63px] h-[63px]">
+                        <img src="{{ asset('images/choose/market.png') }}" alt="" class="w-[63px] h-[63px]">
                         <p class=" ml-[30px] mt-[10px]"><strong>45+</strong>
                             <br> Market Coverage
                         </p>
                     </div>
                     <div class="flex">
-                        <img src="{{ asset('images/choose/established.png') }}" alt="" class="w-[63px] h-[63px]">
+                        <img src="{{ asset('images/choose/located.png') }}" alt="" class="w-[63px] h-[63px]">
                         <p class=" ml-[30px] mt-[10px]">Located in <br> <span class=" font-bold">Jakarta & Lampung</span> </p>
                     </div>
 
                     <div class="flex">
-                        <img src="{{ asset('images/choose/established.png') }}" alt="" class="w-[63px] h-[63px]">
+                        <img src="{{ asset('images/choose/coverage.png') }}" alt="" class="w-[63px] h-[63px]">
                         <p class=" ml-[30px] mt-[10px]"><strong>100+</strong>
                             <br> of Employees
                         </p>

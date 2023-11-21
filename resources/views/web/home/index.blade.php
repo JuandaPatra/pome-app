@@ -112,16 +112,11 @@
     }
 
     .tranding-slide .tranding-slide-img img {
-        /* width: 800px;
-        height: 500px; */
 
-        /* width: 600px; */
         width: 640px;
         height: 400px;
         height: 350px;
-        /* height: 250px; */
-        /* width: 37rem;
-        height: 42rem; */
+
         border-radius: 2rem;
         object-fit: cover;
     }
@@ -173,8 +168,7 @@
 
     .tranding-slider-control .swiper-button-next {
         left: 58% !important;
-        /* transform: translateX(-58%) !important; */
-        /* transform: translateX(145px) !important; */
+
         transform: translate(145px, -200px) !important;
         /* left: 70% !important; */
         /* left:1000px !important;
@@ -200,8 +194,9 @@
     @media (max-width:450px) {
         .tranding-slider-control .swiper-button-next {
             left: 80% !important;
-            /* transform: translateX(-80%) !important; */
-            transform: translate(-29px, -80px) !important;
+            /* transform: translate(-29px, -80px) !important; */
+            left: calc(50% + 105px) !important;
+            top: -80px !important;
         }
     }
 
@@ -214,9 +209,13 @@
 
     @media (max-width:450px) {
         .tranding-slider-control .swiper-button-prev {
-            left: 20% !important;
+            /* left: 20% !important; */
             /* transform: translateX(-20%) !important; */
-            transform: translate(-12px, -80px) !important;
+            /* transform: translate(-12px, -80px) !important; */
+
+            position: absolute;
+            left: calc(50% - 105px) !important;
+            top: -80px !important;
         }
     }
 
@@ -647,18 +646,15 @@
                     <h1 class="mt-[30px] px-[40px] w-full lg:w-[54%] text-[#444444] text-[16px] font-bold font-Montserrat">Interested in becoming the agent of sustainable energy? Hit us up here:</h1>
                     <div class="mb-4 pl-[40px] pr-[60px] mt-[30px]">
                         <input class=" bg-transparent w-full placeholder:text-gray-500 pb-[14px] name-input border-input" type="text" placeholder="Name" required>
-                        <!-- <h6 class="message-name text-red-600">*must filled</h6> -->
                     </div>
                     <div class="mb-4 pl-[40px] pr-[60px] mt-[25px]">
                         <input class=" bg-transparent w-full placeholder:text-gray-500 pb-[14px] email-input border-input" type="email" placeholder="Email" required>
-                        <!-- <h6 class="message-email text-red-600">*must filled</h6> -->
                     </div>
 
 
                     <div class="relative mb-4 pl-[40px] pr-[60px] mt-[25px]">
                         <textarea class=" bg-transparent resize-none w-full  placeholder:text-gray-500 pb-[20px] message-input border-input" placeholder="Message" required></textarea>
                         <button class="absolute  transform -translate-y-1/2 top-[20px] right-[40px]  text-white font-bold py-2 px-4 rounded" type="submit" id="message-button"><img src="{{ asset('images/homepage/submit-b.png') }}" alt=""></button>
-                        <!-- <h6 class="message-name text-red-600">*must filled</h6> -->
                     </div>
 
                     <div class="relative mb-4 pl-[40px] pr-[60px] mt-[25px]">
@@ -680,27 +676,43 @@
         </div>
     </div>
 
-    <div class="hidden lg:block basis-1/4"><img alt="image-mesage" src="{{ asset('images/homepage/message.png') }}" class="h-full w-full object-none"></div>
+    <div class="hidden lg:block basis-1/4"><img alt="image-mesage" src="{{ asset('images/homepage/message-2.png') }}" class="h-full w-full object-none"></div>
 </section>
 
 
 @include('components.drawer')
 @include('components.footer')
 
-<div class="fixed z-10 overflow-y-auto top-0 w-full left-0 modal-open hidden" id="modal">
-    <div class="flex items-center justify-center min-height-100vh pt-4 px-4 pb-20 text-center sm:block sm:p-0">
+
+
+
+<div class="fixed z-50 inset-0 overflow-y-auto modal-open">
+    <div class="flex items-center justify-center min-h-screen pt-4 px-4 pb-20 text-center sm:block sm:p-0">
+
+        <!-- Background Overlay -->
         <div class="fixed inset-0 transition-opacity">
-            <div class="absolute inset-0 bg-gray-900 opacity-75" />
+            <div class="absolute inset-0 bg-black opacity-50"></div>
         </div>
-        <span class="hidden sm:inline-block sm:align-middle sm:h-screen">&#8203;</span>
-        <div class="inline-block align-center bg-white rounded-lg text-left overflow-hidden shadow-xl transform transition-all sm:my-8 sm:align-middle sm:max-w-lg sm:w-full" role="dialog" aria-modal="true" aria-labelledby="modal-headline">
-            <div class="bg-white px-4 pt-5 pb-4 sm:p-6 sm:pb-4">
-                <h1>Success</h1>
+
+        <!-- Modal Container -->
+        <div class="inline-block align-center  rounded-lg text-left overflow-hidden  transform transition-all sm:my-8 sm:align-middle sm:max-w-lg sm:w-full">
+
+            <!-- Modal Content -->
+            <div class="px-4 pt-5 pb-4 sm:p-6 sm:pb-4 md:mt-[100px] mt-[30px] ">
+                <div class="inline-block align-center bg-white rounded-lg text-left overflow-hidden shadow-xl transform transition-all sm:my-8 sm:align-middle sm:max-w-lg sm:w-full" role="dialog" aria-modal="true" aria-labelledby="modal-headline">
+                    <button type="button" class="absolute top-3 end-2.5 text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm w-8 h-8 ms-auto inline-flex justify-center items-center dark:hover:bg-gray-600 dark:hover:text-white close-modal">
+                        <svg class="w-3 h-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 14">
+                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 6 6m0 0 6 6M7 7l6-6M7 7l-6 6" />
+                        </svg>
+                        <span class="sr-only">Close modal</span>
+                    </button>
+                    <div class="bg-white px-4 pt-5 pb-4 sm:p-6 sm:pb-4">
+                        <h1 class=" font-MontserratBold">Thank you for submit messages</h1>
+                    </div>
+
+                </div>
             </div>
-            <div class="bg-gray-200 px-4 py-3 text-right">
-                <button type="button" class="py-2 px-4 bg-gray-500 text-white rounded hover:bg-gray-700 mr-2 close-modal"> Close</button>
-                <!-- <button type="button" class="py-2 px-4 bg-blue-500 text-white rounded hover:bg-blue-700 mr-2"><i class="fas fa-plus"></i> Create</button> -->
-            </div>
+
         </div>
     </div>
 </div>
